@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	// @ts-nocheck
+
+	import { SliceZone } from '@prismicio/svelte';
+	import { dev } from '$app/environment';
+
+	import * as components from '$lib/slices';
+
+	/**
+	 * @type {{ document: { body: any; }; }}
+	 */
+	export let data;
+</script>
+
+<SliceZone slices={data.document.data.body} {components} {dev} />
