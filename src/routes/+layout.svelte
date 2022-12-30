@@ -4,6 +4,8 @@
 
 <nav class="layout">
 	<a rel="prefetch" href="/">My Site</a>
+	<a rel="prefetch" href="/resources">Resources</a>
+	<a rel="prefetch" href="/contact">Contact</a>
 </nav>
 
 <main>

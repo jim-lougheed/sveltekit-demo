@@ -1,12 +1,16 @@
 <script>
+	import * as prismicH from '@prismicio/helpers';
 	/**
 	 * @type {any}
 	 */
 	export let slice;
 </script>
 
-<h2>SubHeading</h2>
+<h2 class="layout">{prismicH.asText(slice.primary.text)}</h2>
 
-<pre>
-    {JSON.stringify(slice, null, 2)}
-</pre>
+<style>
+	h2 {
+		margin-bottom: 5vw;
+		margin-top: 5vw;
+	}
+</style>
